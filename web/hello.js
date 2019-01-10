@@ -12,8 +12,15 @@ function  numberGuessingGame(answer) {
         }
         i++
     } while ( guess != answer && !isNaN(guess));
-    message = guess + " is correct!!"
-    window.alert(message + "\n"+"It took you " +i+" guesses");
+
+    if(isNaN(guess))
+        {
+            window.alert("Aw you quit :o")
+        }
+    else{
+        message = guess + " is correct!!"
+        window.alert(message + "\n"+"It took you " +i+" guesses");
+    }
     return "Play again?";
 }
 function play(){
