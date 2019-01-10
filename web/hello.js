@@ -11,7 +11,7 @@ function  numberGuessingGame(answer) {
             message = guess + " is too high. Please enter another integer.";
         }
         i++
-    } while ( guess != answer && guess != null);
+    } while ( guess != answer && guess != NaN);
     message = guess + " is correct!!"
     window.alert(message + "\n"+"It took you " +i+" guesses");
     return "Play again?";
