@@ -77,7 +77,7 @@ function runMyFunction() {
     fwrite($myfile, $txt);
     fclose($myfile);
 
-    echo '<p>Please Do Not Touch the Animals! You have been recorded. Back Away Slowly.</p>';
+    echo '<p id="warning">Please Do Not Touch the Animals! You have been recorded. Back Away Slowly.</p>';
 }
 
 if (isset($_GET['hello'])) {
