@@ -79,14 +79,14 @@ main a{
 }
 
 main a:link{
-    color: #6495ED;
+    color: #FF5A5F;
 }
 main a:visited{
-    color: #6495ED;
+    color: #FF5A5F;
 }
 main a:hover{
     text-decoration: underline;
-    color: #6495ED;
+    color: #FF5A5F;
 }
 main a:active{
     color: #BFD7EA;
@@ -97,7 +97,7 @@ article{
     margin: 5% 20%;
     background-color: #ffffff;
     padding: 7%;
-    box-shadow: 3px 3px #cccccc;
+    box-shadow: 3px 3px #999999;
 }
 img{
     width: 100%;
