@@ -72,10 +72,13 @@
 
 <?php
 function runMyFunction() {
-    $myfile = fopen("whoDoneIt.txt", "w") or die("Unable to open file!");
+    $myfile = "whoDoneIt.txt";
     $txt = $_SERVER['REMOTE_ADDR'];
-    fwrite($myfile, $txt);
-    fclose($myfile);
+    $txt .= "  ";
+    $txt .= $_SERVER['REQUEST_TIME'];
+    file_put_contents($myfile, $txt, FILE_APPEND);
+
+    echo "<p id='warning'> Please Do Not Touch the Animals! You have been recorded. Back Away Slowly.</p>"
 }
 
 if (isset($_GET['hello'])) {

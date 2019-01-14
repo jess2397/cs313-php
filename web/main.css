@@ -129,4 +129,14 @@ img{
     color: darkgrey;
 }
 
+#warning{
+    height: 30px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 3px solid #73AD21;
+}
+
 
