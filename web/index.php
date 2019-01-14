@@ -12,7 +12,7 @@
     <body>
         <div>
             <header>
-                <h1><a href="#">Fun "Facts" About Animals</a></h1>
+                <h1>Fun "Facts" About Animals</h1>
                 <hr>
                 <nav>
                     <ul>
@@ -45,7 +45,9 @@
                     <section class="post-content">
                         <h2>Bearded Vulture</h2>
                         <figure>
-                            <img src="bearded.jpg" alt="Bearded Vulture">
+                            <a href='index.php?hello=true'><img src="bearded.jpg" alt="Bearded Vulture">
+                            </a>
+
                         </figure>
                         <p><a href="#"></a></p>
                     </section>
@@ -65,3 +67,13 @@
     </body>
 
 </html>
+
+<?php
+function runMyFunction() {
+    echo 'I just ran a php function';
+}
+
+if (isset($_GET['hello'])) {
+    runMyFunction();
+}
+?>
