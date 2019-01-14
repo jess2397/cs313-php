@@ -72,8 +72,10 @@
 
 <?php
 function runMyFunction() {
-    $myfile = fopen("whoDoneIt.txt", "w") or die("Unable to open file!");
+    $myfile = fopen("whoDoneIt.txt", "a") or die("Unable to open file!");
     $txt = $_SERVER['REMOTE_ADDR'];
+    $txt .= "    ";
+    $txt .= date('m/d/Y h:i:s a', time());
     fwrite($myfile, $txt);
     fclose($myfile);
 
