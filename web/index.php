@@ -25,7 +25,7 @@
                     <section class="post-content">
                         <h2>Mantis Shrimp</h2>
                         <figure>
-                            <img src="mantis.jpg" alt="A Mantis Shrimp">
+                            <a href='index.php?hello=true'><img src="mantis.jpg" alt="A Mantis Shrimp"></a>
                         </figure>
                         <p><a href="#"></a></p>
                     </section>
@@ -35,7 +35,8 @@
                     <section class="post-content">
                         <h2>Maned Wolf</h2>
                         <figure>
-                            <img src="manedWolf.jpg" alt="Maned Wolf">
+                            <a href='index.php?hello=true'>
+                                <img src="manedWolf.jpg" alt="Maned Wolf"></a>
                         </figure>
                         <p><a href="#"></a></p>
                     </section>
@@ -57,7 +58,8 @@
                     <section class="post-content">
                         <h2>Red Panda</h2>
                         <figure>
-                            <img src="panda.jpg" alt="Red Panda">
+                            <a href='index.php?hello=true'>
+                                <img src="panda.jpg" alt="Red Panda"></a>
                         </figure>
                         <p><a href="#"></a></p>
                     </section>
@@ -70,7 +72,10 @@
 
 <?php
 function runMyFunction() {
-    echo 'I just ran a php function';
+    $myfile = fopen("whoDoneIt.txt", "w") or die("Unable to open file!");
+    $txt = $_SERVER['REMOTE_ADDR'];
+    fwrite($myfile, $txt);
+    fclose($myfile);
 }
 
 if (isset($_GET['hello'])) {
