@@ -130,7 +130,10 @@ img{
 }
 
 #warning{
-    height: 30px;
+    color: #ffffff;
+    font-size: 2em;
+    margin: 0px;
+    height: 60px;
     background-color: red;
     position: fixed;
     top: 0;
