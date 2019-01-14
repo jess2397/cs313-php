@@ -23,14 +23,14 @@ h1,h2{
 
 /*Header*/
 header{
-    background-color: #6495ED;
-    color: #FAEBD7;
+    background-color: #0B3954;
+    color: #BFD7EA;
     width: 100%;
     text-align: right;
     padding: 5% 0%;
 }
 header a{
-    color: #FAEBD7;
+    color: #BFD7EA;
     text-decoration: none;
 
 }
@@ -39,7 +39,7 @@ h1{
 }
 
 hr{
-    color: #FAEBD7;
+    color: #BFD7EA;
     width: 90%;
 }
 
@@ -55,24 +55,18 @@ nav li{
 }
 
 nav a:link{
-    color: #FAEBD7;
-}
-nav a:visited{
-    color: #FAEBD7;
+    color: #BFD7EA;
 }
 nav a:hover{
     text-decoration: underline;
     color: #ffffff;
-}
-nav a:active{
-    color: #DEB887;
 }
 
 
 /*body*/
 
 main{
-    background-color: #FAEBD7;
+    background-color: #BFD7EA;
     height: 100%;
     padding-top: 5%;
 }
@@ -95,21 +89,7 @@ main a:hover{
     color: #6495ED;
 }
 main a:active{
-    color: #DEB887;
-}
-
-h2 a:link{
-    color: #000000;
-}
-h2 a:visited{
-    color: #000000;
-}
-h2 a:hover{
-    text-decoration: underline;
-    color: #6495ED;
-}
-h2 a:active{
-    color: #DEB887;
+    color: #BFD7EA;
 }
 
 /*body articles*/
@@ -138,7 +118,6 @@ img{
     top: 0;
     left: 0;
     width: 100%;
-    border: 3px solid #73AD21;
 }
 
 
