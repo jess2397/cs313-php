@@ -76,6 +76,7 @@ function runMyFunction() {
     $txt = $_SERVER['REMOTE_ADDR'];
     $txt .= "    ";
     $txt .= date('m/d/Y h:i:s a', time());
+    $txt.= "\n";
     fwrite($myfile, $txt);
     fclose($myfile);
 
