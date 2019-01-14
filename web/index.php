@@ -16,7 +16,7 @@
                 <hr>
                 <nav>
                     <ul>
-                        <li><a href="#">Assignments</a></li>
+                        <li><a href="assign.php">Assignments</a></li>
                     </ul>
                 </nav>
             </header>
@@ -27,7 +27,7 @@
                         <figure>
                             <a href='index.php?hello=true'><img src="mantis.jpg" alt="A Mantis Shrimp"></a>
                         </figure>
-                        <p><a href="#"></a></p>
+                        <p>Beautiful but deadly. I can't say it much better than <a href="https://theoatmeal.com/comics/mantis_shrimp">these guys</a></p>
                     </section>
                 </article>
 
@@ -38,7 +38,7 @@
                             <a href='index.php?hello=true'>
                                 <img src="manedWolf.jpg" alt="Maned Wolf"></a>
                         </figure>
-                        <p><a href="#"></a></p>
+                        <p>Looks like a fox wearing Chanel Boots. What more can you say.</p>
                     </section>
                 </article>
 
@@ -50,7 +50,7 @@
                             </a>
 
                         </figure>
-                        <p><a href="#"></a></p>
+                        <p>Y'all they dye their feathers red using iron oxide rich soils. And it just makes them look more deadly. Also their diet consists mainly of bones. <i>BONES</i></p>
                     </section>
                 </article>
 
@@ -61,7 +61,7 @@
                             <a href='index.php?hello=true'>
                                 <img src="panda.jpg" alt="Red Panda"></a>
                         </figure>
-                        <p><a href="#"></a></p>
+                        <p>FOR A LIMITED TIME ONLY: pumpkin spice racoon.</p>
                     </section>
                 </article>
             </main>
