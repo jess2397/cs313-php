@@ -15,8 +15,8 @@ session_start();
     <body>
         <div>
             <header>
-                <h1><a href="#">Cart</a></h1>
-                <a href="#">Browse</a>
+                <h1>Cart</h1>
+                <a href="/shopping/shopping.php">Browse</a>
 
             </header>
             <main>
