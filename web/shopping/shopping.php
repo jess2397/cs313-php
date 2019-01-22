@@ -27,7 +27,7 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
         foreach($things as $thing)
         {
             echo '<form action="set.php" method="post">
-            <input type="hidden" name="item" value="' . $thing . '"><div>'  . $thing . '</div><input type="submit"></form>';
+            <input type="hidden" name="item" value="' . $thing . '"><div>'  . $thing . '</div><input type="submit" value="Add"></form>';
         }
     ?>
 

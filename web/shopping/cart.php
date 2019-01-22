@@ -22,9 +22,10 @@ session_start();
             <main>
 
                 <?php
-                foreach($_SESSION['items'] as $item)
+                foreach($things as $thing)
                 {
-                    echo $item . "<br>";
+                    echo '<form action="remove.php" method="post">
+            <input type="hidden" name="item" value="' . $item . '"><div>'  . $item . '</div><input type="submit" value="Remove"></form>';
                 }
                 ?>
 
