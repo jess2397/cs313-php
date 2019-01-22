@@ -1,17 +1,12 @@
+<?php
+    session_start();
 
+if(!isset($_SESSION['items']))
+{
+    $_SESSION['items'] = array();
+}
+array_push($_SESSION['items'],$_POST["item"] )
 
-<!doctype html>
-<html lang="en">
+    header('Location: /shopping/shopping.php');
+?>
 
-    <head>
-        <meta charset="utf-8">
-        <title>Form Results</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-
-    <body>
-        Name: <?php echo $_POST["item"];?><br>
-
-    </body>
-
-</html>

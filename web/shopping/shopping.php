@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Chattel");
 ?>
 
@@ -16,7 +18,7 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
 <div>
 <header>
 <h1><a href="#">Thinga-ma-bobs and Stuff</a></h1>
-<a href="#">Shopping Cart</a>
+<a href="cart.php">Shopping Cart</a>
 
 </header>
 <main>
