@@ -1,7 +1,7 @@
 
 <?php
 $majors = array("CS"=>"Computer Science", "CE" => "Computer Engineering", "CIT" => "Computer Information Technology", "SE" => "Software Engineering", "WDD" => "Web Design and Development");
-$places = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "Au" => "Australia", "AF" => "Africa", "AN" => "Antarctica");
+$places = array("NA" => "North America", "SA" => "South America", "EU" => "Europe", "AS" => "Asia", "AU" => "Australia", "AF" => "Africa", "AN" => "Antarctica");
 ?>
 <!doctype html>
 <html lang="en">
