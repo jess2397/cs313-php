@@ -20,8 +20,8 @@ session_start();
             <main>
                 <h2><?php echo $_POST["item"]?></h2>
                 <form class="browse" action="set.php" method="post">
-                    <input type="hidden" name="item" value="<?php echo $_POST["item"]?>"><div class="thing"><?php echo $_POST["item"]?></div>
-                    <input type="submit" value="Add"></form>;
+                    <input type="hidden" name="item" value="<?php echo $_POST["item"]?>">
+                    <input type="submit" value="Add"></form>
             </main>
         </div>
     </body>
