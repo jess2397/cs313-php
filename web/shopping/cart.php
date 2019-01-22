@@ -14,11 +14,7 @@ session_start();
 
     <body>
         <div>
-            <header>
-                <h1>Cart</h1>
-                <a href="/shopping/shopping.php">Browse</a>
-
-            </header>
+            <?php include 'header.php';?>
             <main>
 
                 <?php

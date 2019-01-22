@@ -16,11 +16,7 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
 
 <body>
 <div>
-<header>
-<h1><a href="#">Thinga-ma-bobs and Stuff</a></h1>
-<a href="cart.php">Shopping Cart</a>
-
-</header>
+    <?php include 'header.php';?>
 <main>
 
     <?php
