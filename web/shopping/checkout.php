@@ -27,16 +27,18 @@ session_start();
                 </ul>
 
                 <form action="confirmation.php" method="post">
+                    Name:
+                    <input type="text" name="name"><br/>
                     Line one:
-                    <input type="text" name="lineOne">
+                    <input type="text" name="lineOne"><br/>
                     Line two:
-                    <input type="text" name="lineTwo">
+                    <input type="text" name="lineTwo"><br/>
                     City:
-                    <input type="text" name="city">
+                    <input type="text" name="city"><br/>
                     State:
-                    <input type="text" name="state">
+                    <input type="text" name="state"><br/>
                     Zip Code:
-                    <input type="text" name="zip">
+                    <input type="text" name="zip"><br/>
                     <input type="submit" value="Checkout">
                 </form>
             </main>

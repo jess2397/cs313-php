@@ -1,5 +1,12 @@
 <?php
 session_start();
+$name = filter_input(INPUT_PUT, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+$first = filter_input(INPUT_PUT, 'lineOne', FILTER_SANITIZE_SPECIAL_CHARS);
+$second = filter_input(INPUT_PUT, 'lineTwo', FILTER_SANITIZE_SPECIAL_CHARS);
+$city = filter_input(INPUT_PUT, 'city', FILTER_SANITIZE_SPECIAL_CHARS);
+$state = filter_input(INPUT_PUT, 'state', FILTER_SANITIZE_SPECIAL_CHARS);
+$zip = filter_input(INPUT_PUT, 'zip', FILTER_SANITIZE_SPECIAL_CHARS);
+
 ?>
 
 <!doctype html>
@@ -30,15 +37,15 @@ session_start();
                 <h2>It will be shipped to:</h2>
                 <p>
                 <?php
-                    echo $_POST["lineOne"] . "<br>";
-                    if(isset($_POST["lineTwo"]))
+                    echo $name . "<br>";
+                    echo $first . "<br>";
+                    if(isset($second))
                     {
-                        echo $_POST["lineTwo"] . "<br/>";
+                        echo $second . "<br/>";
                     }
-                    echo $_POST["lineTwo"];
-                    echo $_POST["city"] . ", ";
-                    echo $_POST["state"] . "<br>";
-                    echo $_POST["zip"] . "<br>";
+                    echo $city . ", ";
+                    echo $state . "<br>";
+                    echo $zip . "<br>";
                     ?>
 
                 </p>
