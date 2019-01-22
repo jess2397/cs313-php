@@ -22,7 +22,7 @@ session_start();
                 <img class="itemImage" src="<?php echo $_POST["pic"]?>">
                 <form action="set.php" method="post">
                     <input type="hidden" name="item" value="<?php echo $_POST["item"]?>">
-                    <input type="submit" value="Add"></form>
+                    <input class="itemButton" type="submit" value="Add"></form>
             </main>
         </div>
     </body>

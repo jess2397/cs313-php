@@ -95,7 +95,9 @@ div{
 
 .itemImage{
     width 200px;
-
+}
+.itemButton{
+    background-color: #0B3954;
 }
 
 input[type=submit] {
@@ -108,7 +110,7 @@ input[type=submit] {
     display: inline-block;
     font-size: 16px;
 
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     right: 20px;
 }
