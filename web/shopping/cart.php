@@ -25,7 +25,7 @@ session_start();
                 }
                 ?>
 
-                <a href="/shopping/checkout.php">Checkout</a>
+                <br><a href="/shopping/checkout.php">Checkout</a>
 
             </main>
         </div>
