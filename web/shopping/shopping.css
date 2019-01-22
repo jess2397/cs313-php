@@ -93,3 +93,14 @@ div{
     width 200px;
 }
 
+input[type=submit] {
+    background-color: #BFD7EA; /* Green */
+    border: none;
+    color: #FF5A5F;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
