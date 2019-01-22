@@ -39,7 +39,7 @@ $zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_SPECIAL_CHARS);
                 <?php
                     echo $name . "<br>";
                     echo $first . "<br>";
-                    if(isset($second))
+                    if($second != "")
                     {
                         echo $second . "<br/>";
                     }
