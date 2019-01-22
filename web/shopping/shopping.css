@@ -34,12 +34,7 @@ header a{
 
 }
 h1{
-    padding: 5%;
-}
-
-hr{
-    color: #BFD7EA;
-    width: 90%;
+    padding: 20px;
 }
 
 a{
@@ -61,12 +56,12 @@ main{
 
     background-color: #BFD7EA;
     height: 100%;
-    padding-top: 5%;
 }
 .shop{
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div{
@@ -76,6 +71,10 @@ div{
     display: inline;
     padding: 10px;
     width: 200px;
+}
+
+#confirm{
+ padding: 20px;
 }
 
 

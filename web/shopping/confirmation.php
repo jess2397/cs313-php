@@ -15,7 +15,7 @@ session_start();
     <body>
         <div>
             <?php include 'header.php';?>
-            <main>
+            <main id="confirm">
                 <h2>Thanks for Shopping</h2>
                 <p>You bought:</p>
                 <ul>
@@ -31,7 +31,11 @@ session_start();
                 <p>
                 <?php
                     echo $_POST["lineOne"] . "<br>";
-                    echo $_POST["lineTwo"] . "<br>";
+                    if(isset($_POST["lineTwo"]))
+                    {
+                        echo $_POST["lineTwo"] . "<br/>";
+                    }
+                    echo $_POST["lineTwo"];
                     echo $_POST["city"] . ", ";
                     echo $_POST["state"] . "<br>";
                     echo $_POST["zip"] . "<br>";
