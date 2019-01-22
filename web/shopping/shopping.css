@@ -79,6 +79,9 @@ div{
 #confirm{
  padding: 20px;
 }
+.browser img{
+    width: 80%;
+}
 .thing{
     font-size: 2em;
 }

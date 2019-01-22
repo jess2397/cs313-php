@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Chattel");
+$things = array("Thing" => "thing.jpg", "Whatcha-macallit" => "what.jpg", "DoHicky" => "doo.jpg", "Stuff" => "stuff.jpg", "A Goober" => "goober.jpg", "Thingamajigger" => "jigger.jpg");
 ?>
 
 <!doctype html>
@@ -23,9 +23,11 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
     <h2>Browse</h2>
     <div class="shop">
     <?php
-        foreach($things as $thing)
+        foreach($things as $thing => $pic)
         {
             echo '<form class="browse" action="item.php" method="post">
+            <img src="' . $pic . '"/>
+            <input type="hidden" name="pic" value="' . $pic . '">
             <input type="hidden" name="item" value="' . $thing . '"><div class="thing">'  . $thing . '</div><input type="submit" value="Add"></form>';
         }
     ?>
