@@ -1,11 +1,11 @@
 <?php
 session_start();
-$name = filter_input(INPUT_PUT, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-$first = filter_input(INPUT_PUT, 'lineOne', FILTER_SANITIZE_SPECIAL_CHARS);
-$second = filter_input(INPUT_PUT, 'lineTwo', FILTER_SANITIZE_SPECIAL_CHARS);
-$city = filter_input(INPUT_PUT, 'city', FILTER_SANITIZE_SPECIAL_CHARS);
-$state = filter_input(INPUT_PUT, 'state', FILTER_SANITIZE_SPECIAL_CHARS);
-$zip = filter_input(INPUT_PUT, 'zip', FILTER_SANITIZE_SPECIAL_CHARS);
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+$first = filter_input(INPUT_POST, 'lineOne', FILTER_SANITIZE_SPECIAL_CHARS);
+$second = filter_input(INPUT_POST, 'lineTwo', FILTER_SANITIZE_SPECIAL_CHARS);
+$city = filter_input(INPUT_POST, 'city', FILTER_SANITIZE_SPECIAL_CHARS);
+$state = filter_input(INPUT_POST, 'state', FILTER_SANITIZE_SPECIAL_CHARS);
+$zip = filter_input(INPUT_POST, 'zip', FILTER_SANITIZE_SPECIAL_CHARS);
 
 ?>
 
