@@ -57,11 +57,13 @@ a:hover{
 
 
 /*body*/
+main{
 
-.shop{
     background-color: #BFD7EA;
     height: 100%;
     padding-top: 5%;
+}
+.shop{
 
     display: flex;
     flex-direction: row;
