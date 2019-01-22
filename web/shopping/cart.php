@@ -21,8 +21,8 @@ session_start();
                 <?php
                 foreach($_SESSION['items'] as $item)
                 {
-                    echo '<form class="cart" action="remove.php" method="post">
-            <input type="hidden" name="item" value="' . $item . '"><div class="cartItem">'  . $item . '</div><input type="submit" value="Remove"></form>';
+                    echo '<form class="browse" action="remove.php" method="post">
+            <input type="hidden" name="item" value="' . $item . '"><div class="thing">'  . $item . '</div><input type="submit" value="Remove"></form>';
                 }
                 ?>
                 </div>
