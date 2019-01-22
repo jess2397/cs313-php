@@ -77,6 +77,7 @@ div{
     padding: 10px;
     background-color: #0B3954;
     margin: 10px;
+    width: 33.33%;
 }
 
 #confirm{
@@ -85,7 +86,7 @@ div{
 .browse img{
     width: 200px;
     height: 200px;
-    align-self: center;
+    margin: auto;
 }
 .thing{
     font-size: 2em;
@@ -94,7 +95,6 @@ div{
 
 .itemImage{
     width 200px;
-    margin: 30px;
 }
 
 input[type=submit] {
