@@ -19,16 +19,17 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
     <?php include 'header.php';?>
 
 <main>
-    <h2>Browse</h2>
 
+    <h2>Browse</h2>
+    <div class="shop">
     <?php
         foreach($things as $thing)
         {
-            echo '<form action="set.php" method="post">
+            echo '<form class="browse" action="set.php" method="post">
             <input type="hidden" name="item" value="' . $thing . '"><div>'  . $thing . '</div><input type="submit" value="Add"></form>';
         }
     ?>
-
+    </div>
 </main>
 </div>
 </body>
