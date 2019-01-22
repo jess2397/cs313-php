@@ -94,6 +94,7 @@ div{
 
 .itemImage{
     width 200px;
+    margin: 30px;
 }
 
 input[type=submit] {
@@ -105,5 +106,7 @@ input[type=submit] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+
+    margin-left: auto;
 }
 
