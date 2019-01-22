@@ -28,7 +28,7 @@ $things = array("Thing" => "thing.jpg", "Whatcha-macallit" => "what.jpg", "DoHic
             echo '<form class="browse" action="item.php" method="post">
             <img src="' . $pic . '"/>
             <input type="hidden" name="pic" value="' . $pic . '">
-            <input type="hidden" name="item" value="' . $thing . '"><div class="thing">'  . $thing . '</div><input type="submit" value="Add"></form>';
+            <input type="hidden" name="item" value="' . $thing . '"><div class="thing">'  . $thing . '</div><input type="submit" value="View"></form>';
         }
     ?>
     </div>
