@@ -80,13 +80,16 @@ div{
  padding: 20px;
 }
 .browse img{
-    width: 80%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
 }
 .thing{
     font-size: 2em;
+    color: #BFD7EA;
 }
 
 .itemImage{
-    width 300px;
+    width 200px;
 }
 
