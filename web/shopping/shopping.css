@@ -104,10 +104,11 @@ input[type=submit] {
     border: none;
     color: #FF5A5F;
     padding: 15px 32px;
+    width: 90%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1em;
 
 }
 
