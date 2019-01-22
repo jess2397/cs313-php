@@ -65,4 +65,12 @@ main{
     padding-top: 5%;
 }
 
+div{
+    display: inline;
+}
+form{
+    display: inline;
+    padding: 10px;
+}
+
 
