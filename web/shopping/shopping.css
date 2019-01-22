@@ -70,11 +70,14 @@ div{
 .browse{
     display: inline;
     padding: 10px;
-    width: 200px;
+    width: 33.33%;
 }
 
 #confirm{
  padding: 20px;
+}
+.thing{
+    font-size: 2em;
 }
 
 
