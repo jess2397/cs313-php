@@ -17,7 +17,7 @@ session_start();
             <?php include 'header.php';?>
             <main>
                 <h2>Cart</h2>
-                <div id="shop">
+                <div class="shop">
                 <?php
                 foreach($_SESSION['items'] as $item)
                 {
