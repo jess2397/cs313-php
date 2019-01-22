@@ -16,7 +16,7 @@ session_start();
         <div>
             <?php include 'header.php';?>
             <main>
-                <h1>Thanks for Shopping</h1>
+                <h2>Thanks for Shopping</h2>
                 <p>You bought:</p>
                 <ul>
                     <?php

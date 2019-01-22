@@ -17,7 +17,9 @@ $things = array("Thing", "Whatcha-macallit", "DoHicky", "Stuff", "A Goober", "Ch
 <body>
 <div>
     <?php include 'header.php';?>
+
 <main>
+    <h2>Browse</h2>
 
     <?php
         foreach($things as $thing)

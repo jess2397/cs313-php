@@ -16,7 +16,7 @@ session_start();
         <div>
             <?php include 'header.php';?>
             <main>
-
+                <h2>Checkout</h2>
                 <ul>
                 <?php
                 foreach($_SESSION['items'] as $item)

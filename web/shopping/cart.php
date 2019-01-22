@@ -16,7 +16,7 @@ session_start();
         <div>
             <?php include 'header.php';?>
             <main>
-
+                <h2>Cart</h2>
                 <?php
                 foreach($_SESSION['items'] as $item)
                 {
@@ -24,6 +24,8 @@ session_start();
             <input type="hidden" name="item" value="' . $item . '"><div>'  . $item . '</div><input type="submit" value="Remove"></form>';
                 }
                 ?>
+
+                <a href="/shopping/checkout.php">Checkout</a>
 
             </main>
         </div>
