@@ -17,14 +17,6 @@ session_start();
             <?php include 'header.php';?>
             <main>
                 <h2>Checkout</h2>
-                <ul>
-                <?php
-                foreach($_SESSION['items'] as $item)
-                {
-                    echo '<li>' . $item.'</li>';
-                }
-                ?>
-                </ul>
 
                 <form action="confirmation.php" method="post">
                     Name:
@@ -39,7 +31,7 @@ session_start();
                     <input type="text" name="state"><br/>
                     Zip Code:
                     <input type="text" name="zip"><br/>
-                    <input type="submit" value="Checkout">
+                    <input id="checkoutBtn" type="submit" value="Checkout">
                 </form>
             </main>
         </div>

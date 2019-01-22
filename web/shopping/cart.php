@@ -22,6 +22,7 @@ session_start();
                 foreach($_SESSION['items'] as $item)
                 {
                     echo '<form class="browse" action="remove.php" method="post">
+            <img src="' . $pic . '"/>
             <input type="hidden" name="item" value="' . $item . '"><div>'  . $item . '</div><input type="submit" value="Remove"></form>';
                 }
                 ?>
