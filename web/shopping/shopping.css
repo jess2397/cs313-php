@@ -62,6 +62,7 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 div{
@@ -71,6 +72,8 @@ div{
     display: inline;
     padding: 10px;
     width: 33.33%;
+    background-color: #0B3954;
+    margin: 10px;
 }
 
 #confirm{
