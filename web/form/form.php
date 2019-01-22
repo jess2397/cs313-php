@@ -11,16 +11,16 @@
     <body>
         <form action="results.php" method="post">
             Name: <input type="text" name="name"><br>
-            E-mail: <input type="text" name="email"><br>\
-            <h2>Major</h2>
-            <input type="radio" name="major" value="CS"> Computer Science
-            <input type="radio" name="major" value="CIT">Computer Information Technology
-            <input type="radio" name="major" value="WDD"> Web Design and Development
-            <input type="radio" name="major" value="CE"> Computer Engineering
-            <input type="radio" name="major" value="SE"> Software Engineer
+            E-mail: <input type="text" name="email"><br>
+            Major:
+            <input type="radio" name="major" value="CS"> Computer Science<br>
+            <input type="radio" name="major" value="CIT">Computer Information Technology<br>
+            <input type="radio" name="major" value="WDD"> Web Design and Development<br>
+            <input type="radio" name="major" value="CE"> Computer Engineering<br>
+            <input type="radio" name="major" value="SE"> Software Engineer<br>
 
-            Comments:
-            <textarea name="comment"></textarea>
+            Comments:<br>
+            <textarea name="comment"></textarea><br>
 
             <input type="submit">
         </form>
