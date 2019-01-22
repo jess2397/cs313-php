@@ -110,8 +110,5 @@ input[type=submit] {
     display: inline-block;
     font-size: 16px;
 
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
 }
 
