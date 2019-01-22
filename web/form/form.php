@@ -21,6 +21,18 @@
             Comments:<br>
             <textarea name="comment"></textarea><br>
 
+            Places I've visited: <br>
+
+            <input type="checkbox" name="places[]" value="NA"> North America
+            <input type="checkbox" name="places[]" value="SA"> South America
+            <input type="checkbox" name="places[]" value="EU"> Europe
+            <input type="checkbox" name="places[]" value="AS"> Asia
+            <input type="checkbox" name="places[]" value="AU"> Australia
+            <input type="checkbox" name="places[]" value="AF"> Africa
+            <input type="checkbox" name="places[]" value="AN"> Antarctica
+
+
+
             <input type="submit">
         </form>
     </body>
