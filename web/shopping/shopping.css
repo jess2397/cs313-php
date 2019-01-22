@@ -86,7 +86,7 @@ div{
 .browse img{
     width: 200px;
     height: 200px;
-    margin: auto;
+    margin: 0 auto;
 }
 .thing{
     font-size: 2em;
