@@ -1,3 +1,7 @@
+<?php
+$majors = array("CS"=>"Computer Science", "CE" => "Computer Engineering", "CIT" => "Computer Information Technology", "SE" => "Software Engineering", "WDD" => "Web Design and Development");
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -12,11 +16,13 @@
             Name: <input type="text" name="name"><br>
             E-mail: <input type="text" name="email"><br>
             Major:
-            <input type="radio" name="major" value="CS"> Computer Science<br>
-            <input type="radio" name="major" value="CIT">Computer Information Technology<br>
-            <input type="radio" name="major" value="WDD"> Web Design and Development<br>
-            <input type="radio" name="major" value="CE"> Computer Engineering<br>
-            <input type="radio" name="major" value="SE"> Software Engineer<br>
+            <?php
+            foreach($majors as $x => $x_value)
+            {
+                echo '<input type="radio" name="major" value="' . $x . '"> ' . $x_value . '<br>';
+
+            }
+            ?>
 
             Comments:<br>
             <textarea name="comment"></textarea><br>
