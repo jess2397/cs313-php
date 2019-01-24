@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+require 'info.php';
 ?>
 
 <!doctype html>
@@ -22,6 +24,7 @@ session_start();
                 foreach($_SESSION['items'] as $item)
                 {
                     echo '<form class="browse" action="remove.php" method="post">
+                    <img src="' . $things[$item] . '"/>
             <input type="hidden" name="item" value="' . $item . '"><div class="thing">'  . $item . '</div><input type="submit" value="Remove"></form>';
                 }
                 ?>
