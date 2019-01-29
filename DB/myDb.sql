@@ -1,6 +1,4 @@
 
-#I just use \i DB/myDb.sql to add all of this information into my database
-
 CREATE TABLE author
 (
     id SERIAL       PRIMARY KEY,
