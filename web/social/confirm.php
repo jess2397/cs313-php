@@ -25,8 +25,8 @@ catch (PDOException $ex)
 $user = $_POST['username'];
 
 $row = $db->query("SELECT username, password, display_name FROM author WHERE username = '".$user."'");
-
+$results = $row->fetchAll(PDO::FETCH_ASSOC);
 
 echo "1 ".$_POST['pass']."<br>";
-echo "2 ".$row['password'];
+echo "2 ".$results['password'];
 ?>
