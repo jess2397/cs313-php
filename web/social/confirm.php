@@ -23,7 +23,7 @@ catch (PDOException $ex)
     die();
 }
 
-$statement = $db->query('SELECT username, password FROM author WHERE username =' . $_SESSION['username']);
+$statement = $db->query('SELECT username, password FROM author WHERE username =' . $_POST['user']);
 
 
 
