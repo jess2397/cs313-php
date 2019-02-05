@@ -67,7 +67,7 @@ class Post {
 <meta charset="utf-8">
 <title>Fun "Facts" About Animals</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="main.css">
+<!--<link rel="stylesheet" type="text/css" href="main.css">-->
 
 </head>
 
@@ -79,7 +79,14 @@ class Post {
 </header>
 <main>
     <?php
-
+    foreach($posts as $post)
+    {
+        echo '<article>
+<h2>' . $post->getAuthor(). '</h2>
+<p>' . $post->getContent(). '</p>
+<div class="date">'. $post->getDate(). ' </div>
+</article>'
+    }
     ?>
 
 </main>
