@@ -25,7 +25,7 @@ catch (PDOException $ex)
 
 
 $user = $_POST['username'];
-$statement = $db->query('SELECT username, password FROM author WHERE username = 4');
+$statement = $db->query('SELECT username, password FROM author WHERE username = jess2397');
 
 
 
