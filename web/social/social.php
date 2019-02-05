@@ -51,7 +51,7 @@ catch (PDOException $ex)
         }
         else
         {
-            echo '<a href="login.php">Login</a>'
+            echo '<a href="login.php">Login</a>';
         }
         ?>
     </nav>
