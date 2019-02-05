@@ -91,9 +91,9 @@ class Post {
         foreach($posts as $post)
         {
             echo '<article>
-                <h2>' . $post.getAuthor(). '</h2>
-                <p>' . $post.getContent(). '</p>
-                <div class="date">'. $post.getDate(). ' </div>
+                <h2>' . $post->getAuthor(). '</h2>
+                <p>' . $post->getContent(). '</p>
+                <div class="date">'. $post->getDate(). ' </div>
             </article>'
         }
     ?>
