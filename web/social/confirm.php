@@ -23,7 +23,7 @@ catch (PDOException $ex)
     die();
 }
 $user = $_POST['username']. "";
-foreach ($db->query('SELECT username, password FROM author WHERE username =' . $user) as $row)
+foreach ($db->query('SELECT username, password FROM author WHERE username = "jess2397"') as $row)
 {
     echo 'user: ' . $row['username'];
     echo ' password: ' . $row['password'];
