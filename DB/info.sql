@@ -8,4 +8,4 @@ INSERT INTO post (content, author_id, date) VALUES
 ('yall', 2, '2019-02-05');
 
  INSERT INTO comment (author_id, post_id, content, date) VALUES
- (1, 1, 'this is a comment', '2019-02-05');
+ (1, 4, 'this is a comment', '2019-02-05');

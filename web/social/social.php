@@ -46,15 +46,30 @@ catch (PDOException $ex)
 </header>
 <main>
     <?php
-    foreach ($db->query('SELECT * FROM post AS p
+    foreach ($db->query('SELECT p.id, p.content, p.date, a.display_name FROM post AS p
 JOIN author AS a
 ON p.author_id = a.id') as $row)
     {
         echo '<article>
 <h2>' . $row['display_name'] . '</h2>
 <p>' . $row['content'] . '</p>
-<div class="date">'. $row['date'] . ' </div>
-</article>';
+<div class="date">'. $row['date'] . ' </div>';
+
+        foreach ($db->query('SELECT c.content, a.display_name, c.date FROM comment AS c
+JOIN author AS a
+ON c.author_id = a.id
+JOIN post AS p
+ON c.post_id = p.id
+WHERE c.post_id ='. $row['id']) as $comment)
+        {
+            echo '<div class="comment">
+                  <h3>' . $comment['display_name']. '</h3>
+                  <p>' . $comment['content'] . '</p>
+                  <div class="date">' . $comment['date']. '</div>';
+        }
+echo '</article>';
+
+
     }
     ?>
 
