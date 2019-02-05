@@ -54,7 +54,7 @@ ON p.author_id = a.id') as $row)
 <h2>' . $row['display_name'] . '</h2>
 <p>' . $row['content'] . '</p>
 <div class="date">'. echo $row['date'] . ' </div>
-</article>'
+</article>';
     }
     ?>
 
