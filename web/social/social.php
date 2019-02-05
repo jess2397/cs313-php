@@ -55,6 +55,7 @@ class Post {
 
     $posts = array();
 
+    $posts = new Post;
 
 
 
@@ -79,12 +80,12 @@ class Post {
 </header>
 <main>
     <?php
-    foreach($posts as $post)
+    foreach($posts as $p)
     {
         echo '<article>
-<h2>' . $post->getAuthor(). '</h2>
-<p>' . $post->getContent(). '</p>
-<div class="date">'. $post->getDate(). ' </div>
+<h2>' . $p->getAuthor(). '</h2>
+<p>' . $p->getContent(). '</p>
+<div class="date">'. $p->getDate(). ' </div>
 </article>'
     }
     ?>
