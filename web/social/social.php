@@ -55,17 +55,7 @@ class Post {
 
     $posts = array();
 
-    foreach ($db->query('SELECT * FROM post AS p
-    JOIN author AS a
-    ON p.author_id = a.id') as $row)
-    {
-        $post = new Post;
-        post->setAuthor($row['username']);
-        post->setContent($row['content']);
-        post->setDate($row['date']);
 
-        listPerson[] = $post;
-    }
 
 
 
