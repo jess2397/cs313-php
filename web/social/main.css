@@ -67,6 +67,12 @@ article{
     padding: 7%;
     box-shadow: 3px 3px #999999;
 }
+.comment{
+    margin: 5% 10%;
+    background-color: #BFD7EA;
+    padding: 7%;
+    box-shadow: 3px 3px #999999;
+}
 .post-date{
     font-size: .9em;
     color: darkgrey;
