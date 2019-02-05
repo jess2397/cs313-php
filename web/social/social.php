@@ -23,40 +23,6 @@ catch (PDOException $ex)
     die();
 }
 
-class Post {
-
-    /* Member variables */
-    var $authorName;
-    var $content;
-    var $date;
-
-    /* Member functions */
-    function setAuthor($name){
-        $this->authorName = $name;
-    }
-    function getAuthor(){
-        echo $this->authorName;
-    }
-
-    function setContent($content){
-        $this->content = $content;
-    }
-    function getContent(){
-        echo $this->content;
-    }
-
-    function setDate($date){
-        $this->date = $date;
-    }
-    function getDate(){
-        echo $this->date;
-    }
-}
-
-    $posts = array();
-
-    $posts = new Post;
-
 
 
 
@@ -80,13 +46,13 @@ class Post {
 </header>
 <main>
     <?php
-    foreach($posts as $p)
+    foreach ($db->query('SELECT * FROM post AS p
+JOIN author AS a
+ON p.author_id = a.id') as $row)
     {
-        echo '<article>
-<h2>' . $p->getAuthor(). '</h2>
-<p>' . $p->getContent(). '</p>
-<div class="date">'. $p->getDate(). ' </div>
-</article>'
+        echo $row['username'];
+        echo $row['content'];
+        echo $row['date'];
     }
     ?>
 
