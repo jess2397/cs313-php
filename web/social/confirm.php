@@ -24,7 +24,7 @@ catch (PDOException $ex)
 }
 $user = $_POST['username'];
 
-foreach ($db->query("SELECT username, password FROM author WHERE username = '".$user."'") as $row)
+foreach ($db->query("SELECT username, password, display_name FROM author WHERE username = '".$user."'") as $row)
 {
 
     if($_POST["pass"] == $row["password"])
