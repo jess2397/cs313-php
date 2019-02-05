@@ -55,7 +55,8 @@ class Post {
 
     $posts = array();
 
-    foreach ($db->query('SELECT * FROM post AS p JOIN author AS a
+    foreach ($db->query('SELECT * FROM post AS p
+    JOIN author AS a
     ON p.author_id = a.id') as $row)
     {
         $post = new Post;
@@ -88,14 +89,7 @@ class Post {
 </header>
 <main>
     <?php
-        foreach($posts as $post)
-        {
-            echo '<article>
-                <h2>' . $post->getAuthor(). '</h2>
-                <p>' . $post->getContent(). '</p>
-                <div class="date">'. $post->getDate(). ' </div>
-            </article>'
-        }
+
     ?>
 
 </main>
