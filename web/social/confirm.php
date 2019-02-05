@@ -24,12 +24,16 @@ catch (PDOException $ex)
 }
 $user = $_POST['username'];
 
-foreach ($db->query("SELECT username, password FROM author WHERE username = '".$user."'") as $row)
-{
-    echo 'user: ' . $row['username'];
-    echo ' password: ' . $row['password'];
-    echo '<br/>';
-}
+$row = $db->query("SELECT username, password FROM author WHERE username = '".$user."'");
 
+if($_POST["pass"] == $row["password"])
+{
+    $_SESSION['user'] = $row["display_name"];
+    header('Location: /social/social.php');
+
+}
+else{
+    header('Location: /social/login.php?fail=true');
+}
 
 ?>
