@@ -64,13 +64,13 @@ main{
 article{
     margin: 5% 20%;
     background-color: #ffffff;
-    padding: 7%;
+    padding: 20px;
     box-shadow: 3px 3px #999999;
 }
 .comment{
     margin: 15px 15px 15px 30px;
     background-color: #BFD7EA;
-    padding: 7%;
+    padding: 10px;
     box-shadow: 3px 3px #999999;
 }
 .post-date{
