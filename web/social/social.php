@@ -50,9 +50,11 @@ catch (PDOException $ex)
 JOIN author AS a
 ON p.author_id = a.id') as $row)
     {
-        echo $row['username'];
-        echo $row['content'];
-        echo $row['date'];
+        echo '<article>
+<h2>' . $row['display_name'] . '</h2>
+<p>' . $row['content'] . '</p>
+<div class="date">'. echo $row['date'] . ' </div>
+</article>'
     }
     ?>
 
