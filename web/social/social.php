@@ -53,7 +53,7 @@ ON p.author_id = a.id') as $row)
         echo '<article>
 <h2>' . $row['display_name'] . '</h2>
 <p>' . $row['content'] . '</p>
-<div class="date">'. echo $row['date'] . ' </div>
+<div class="date">'. $row['date'] . ' </div>
 </article>';
     }
     ?>
