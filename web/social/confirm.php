@@ -22,8 +22,9 @@ catch (PDOException $ex)
     echo 'Error!: ' . $ex->getMessage();
     die();
 }
-$user = $_POST['username']. "";
-foreach ($db->query('SELECT username, password FROM author WHERE username = "jess2397"') as $row)
+echo $_POST['username'];
+
+foreach ($db->query('SELECT username, password FROM author ') as $row)
 {
     echo 'user: ' . $row['username'];
     echo ' password: ' . $row['password'];
