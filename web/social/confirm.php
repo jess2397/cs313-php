@@ -24,9 +24,19 @@ catch (PDOException $ex)
 }
 $user = $_POST['username'];
 
-$row = $db->query("SELECT username, password, display_name FROM author WHERE username = '".$user."'");
-$results = $row->fetchAll(PDO::FETCH_ASSOC);
+foreach ($db->query("SELECT username, password FROM author WHERE username = '".$user."'") as $row)
+{
 
-echo "1 ".$_POST['pass']."<br>";
-echo "2 ".$results['password'];
+    if($_POST["pass"] == $row["password"])
+    {
+        $_SESSION['user'] = $row["display_name"];
+        header('Location: /social/social.php');
+
+    }
+    else{
+        header('Location: /social/login.php?fail=true');
+    }
+}
+
+
 ?>
