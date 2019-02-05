@@ -27,6 +27,6 @@ $user = $_POST['username'];
 $row = $db->query("SELECT username, password, display_name FROM author WHERE username = '".$user."'");
 
 
-echo $_POST['pass'];
+echo $_POST['pass']."<br>";
 echo $row['password'];
 ?>
