@@ -32,7 +32,7 @@ catch (PDOException $ex)
 
 <head>
 <meta charset="utf-8">
-<title>Fun "Facts" About Animals</title>
+<title>"Social Media"</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -43,6 +43,18 @@ catch (PDOException $ex)
 <header>
 <h1>"Social Media"</h1>
 <hr>
+    <nav>
+        <?php
+        if(isset($_SESSION["user"]))
+        {
+            echo "Welcome" . $_SESSION["user"];
+        }
+        else
+        {
+            echo '<a href="login.php">Login</a>'
+        }
+        ?>
+    </nav>
 </header>
 <main>
     <?php

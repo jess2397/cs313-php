@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -14,11 +18,16 @@
 <header>
 <h1>Login</h1>
 <hr>
-<nav>
-</nav>
 </header>
 <main>
-
+    <h2 style="<?php if($_GET["fail"] != 'true'){ echo 'display:none';}?>">Username or Password incorrect</h2>
+    <form action="confirm.php" method="post">
+        Username:
+        <input type="text" name="username">
+        Password:
+        <input type="text" name="pass">
+        <input type="submit" value="Login">
+    </form>
 
 </main>
 </div>
