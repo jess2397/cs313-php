@@ -31,9 +31,10 @@ if($_POST['pass'] == $row["password"])
 {
     $_SESSION['user'] = $row["display_name"];
     header('Location: /social/social.php');
-
+    exit;
 }
 else{
     header('Location: /social/login.php?fail=true');
+    exit;
 }
 ?>
