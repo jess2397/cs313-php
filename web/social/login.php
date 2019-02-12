@@ -22,10 +22,10 @@ session_start();
 <main class="login">
     <h2 style="color:red;<?php if($_GET["fail"] != 'true'){ echo 'display:none';}?>">Username or Password incorrect</h2>
     <form action="confirm.php" method="post">
-        Username:
-        <input type="text" name="username">
-        Password:
-        <input type="text" name="pass">
+        Username:<br/>
+        <input type="text" name="username"><br/>
+        Password:<br/>
+        <input type="text" name="pass"><br/>
         <input type="submit" value="Login">
     </form>
 
