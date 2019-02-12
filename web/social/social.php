@@ -59,7 +59,7 @@ ON p.author_id = a.id ORDER BY p.date DESC') as $row)
 <p>' . $row['content'] . '</p>
 <div class="date">'. $row['date'] . ' </div>';
 
-        foreach ($db->query('SELECT c.content, a.display_name, c.date, p.id FROM comment AS c
+        foreach ($db->query('SELECT c.content, a.display_name, c.date FROM comment AS c
 JOIN author AS a
 ON c.author_id = a.id
 JOIN post AS p
@@ -74,7 +74,7 @@ WHERE c.post_id ='. $row['id']) as $comment)
         if(isset($_SESSION["user_id"]))
         {
             echo '<form action="comment.php" method="post">
-            <input type="hidden" name="post_id" value="'.  $comment["id"].'"/>
+            <input type="hidden" name="post_id" value="'.  $row['id'].'"/>
     <textarea name="content"></textarea>
     <input type="submit" value="Comment">
     </form>';
