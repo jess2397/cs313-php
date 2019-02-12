@@ -28,6 +28,8 @@ session_start();
         <input type="text" name="pass"><br/>
         <input type="submit" value="Login">
     </form>
+
+        <a href="create_user">Create New User</a>
     </div>
 
 </main>
