@@ -3,11 +3,9 @@
 
 /*basics*/
 html{
-    height: 100%;
 }
 
 body{
-    height: 100%;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
     font-size: 1.2em;
     padding: 0px;
@@ -64,9 +62,7 @@ nav a:hover{
 
 
 /*body*/
-.wrap{
-    height: 100%;
-}
+
 main{
     background-color: #BFD7EA;
     height: 100%;
@@ -93,11 +89,14 @@ article{
     color: darkgrey;
 }
 
-textarea{
+.content{
     width: 90%;
     height: 120px;
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
 
+}
+.login{
+    margin: auto;
 }
 
