@@ -12,7 +12,7 @@ $date = date("Y-m-d h:i");
 
 try
 {
-    $query = 'INSERT INTO post(content, author_id, date, post_id) VALUES(:content, :author_id, :date, :post_id)';
+    $query = 'INSERT INTO comment(content, author_id, date, post_id) VALUES(:content, :author_id, :date, :post_id)';
     $statement = $db->prepare($query);
 
     $statement->bindValue(':content', $content);
