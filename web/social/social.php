@@ -42,7 +42,7 @@ $db = dbConnect();
     if(isset($_SESSION["user_id"]))
     {
        echo '<form action="post.php" method="post">
-            <textarea name="content" class="work"></textarea>
+            <textarea name="content"></textarea>
             <input type="submit" value="Post">
             </form>';
     }
