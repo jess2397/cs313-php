@@ -14,7 +14,7 @@ body{
     margin: 0px;
 }
 
-h1,h2{
+h1,h2,h3{
     font-family: 'Lora';
     margin: 0;
 }
@@ -64,7 +64,9 @@ nav a:hover{
 
 
 /*body*/
-
+.wrap{
+    height: 100%;
+}
 main{
     background-color: #BFD7EA;
     height: 100%;

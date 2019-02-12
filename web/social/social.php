@@ -19,7 +19,7 @@ $db = dbConnect();
 </head>
 
 <body>
-<div>
+<div class="wrap">
 <header>
 <h1>"Social Media"</h1>
 <hr>
