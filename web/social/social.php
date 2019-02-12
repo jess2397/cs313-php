@@ -75,7 +75,7 @@ WHERE c.post_id ='. $row['id']) as $comment)
             echo '<form action="comment.php" method="post">
             <input type="hidden" name="post_id" value="'.  $row['id'].'"/>
     <textarea name="content" class="work"></textarea>
-    <input type="submit" value="Comment">
+    <input class="workBtn" type="submit" value="Comment">
     </form>';
         }
 
