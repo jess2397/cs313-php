@@ -42,7 +42,7 @@ $db = dbConnect();
     if(isset($_SESSION["user_id"]))
     {
        echo '<form action="post.php" method="post">
-            <textarea name="content" class="content"></textarea>
+            <textarea name="content" class="work"></textarea>
             <input type="submit" value="Post">
             </form>';
     }
@@ -74,7 +74,7 @@ WHERE c.post_id ='. $row['id']) as $comment)
         {
             echo '<form action="comment.php" method="post">
             <input type="hidden" name="post_id" value="'.  $row['id'].'"/>
-    <textarea name="content" class="content"></textarea>
+    <textarea name="content" class="work"></textarea>
     <input type="submit" value="Comment">
     </form>';
         }
