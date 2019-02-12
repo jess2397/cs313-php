@@ -88,7 +88,7 @@ article{
     color: darkgrey;
 }
 
-textarea#styled {
+textarea.work{
     width: 600px;
     height: 120px;
     border: 3px solid #cccccc;
