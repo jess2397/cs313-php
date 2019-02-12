@@ -118,12 +118,14 @@ textarea.work{
     margin-left: 20%;
 }
 input[type="submit"]{
+    margin-top: 10px;
     background-color: #0B3954;
     border: none;
     color: #BFD7EA;
     padding: 15px 15px;
     text-align: center;
     text-decoration: none;
+    font-size: 1em;
 }
 
 .wrapper{
