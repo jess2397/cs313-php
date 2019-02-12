@@ -29,7 +29,7 @@ session_start();
         <input type="submit" value="Login">
     </form>
 
-        <a href="create_user">Create New User</a>
+        <a href="create_user.php">Create New User</a>
     </div>
 
 </main>
