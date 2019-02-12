@@ -19,8 +19,8 @@ session_start();
 <h1>Login</h1>
 <hr>
 </header>
-<main>
-    <h2 style="<?php if($_GET["fail"] != 'true'){ echo 'display:none';}?>">Username or Password incorrect</h2>
+<main class="login">
+    <h2 style="color:red;<?php if($_GET["fail"] != 'true'){ echo 'display:none';}?>">Username or Password incorrect</h2>
     <form action="confirm.php" method="post">
         Username:
         <input type="text" name="username">
