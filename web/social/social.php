@@ -3,7 +3,7 @@ session_start();
 
 require('dbConnect.php');
 
-$db = db();
+$db = dbConnect();
 
 
 ?>
@@ -66,7 +66,7 @@ WHERE c.post_id ='. $row['id']) as $comment)
         echo '<form action="comment.php" method="post">
     <textarea name="content"></textarea>
     <input type="submit" value="Comment">
-    </form>'
+    </form>';
 
 echo '</article>';
 

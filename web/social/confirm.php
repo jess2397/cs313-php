@@ -3,7 +3,7 @@ session_start();
 
 require('dbConnect.php');
 
-$db = db();
+$db = dbConnect();
 
 $user = $_POST['username'];
 
