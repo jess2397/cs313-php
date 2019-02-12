@@ -52,7 +52,7 @@ $db = dbConnect();
 
     foreach ($db->query('SELECT p.id, p.content, p.date, a.display_name FROM post AS p
 JOIN author AS a
-ON p.author_id = a.id') as $row)
+ON p.author_id = a.id ORDER BY p.date DESC') as $row)
     {
         echo '<article>
 <h2>' . $row['display_name'] . '</h2>
