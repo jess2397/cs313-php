@@ -88,16 +88,19 @@ article{
     font-size: .75em;
     float: right;
     color: darkgrey;
+    padding: 5px;
 }
 
 textarea{
+    display: block;
     width: 90%;
-    height: 120px;
+    height: 80px;
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
 
 }
 .wrapper{
+    width: 200px;
     margin: auto;
 }
 
