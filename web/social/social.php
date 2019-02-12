@@ -1,29 +1,9 @@
 <?php
 session_start();
 
-try
-{
-    $dbUrl = getenv('DATABASE_URL');
+require('dbConnect.php');
 
-    $dbOpts = parse_url($dbUrl);
-
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"],'/');
-
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-    echo 'Error!: ' . $ex->getMessage();
-    die();
-}
-
-
+$db = db();
 
 
 ?>
@@ -57,6 +37,10 @@ catch (PDOException $ex)
     </nav>
 </header>
 <main>
+    <form action="post.php" method="post">
+    <textarea name="content"></textarea>
+        <input type="submit" value="Comment">
+    </form>
     <?php
     foreach ($db->query('SELECT p.id, p.content, p.date, a.display_name FROM post AS p
 JOIN author AS a
@@ -79,6 +63,11 @@ WHERE c.post_id ='. $row['id']) as $comment)
                   <p>' . $comment['content'] . '</p>
                   <div class="date">' . $comment['date']. '</div>';
         }
+        echo '<form action="comment.php" method="post">
+    <textarea name="content"></textarea>
+    <input type="submit" value="Comment">
+    </form>'
+
 echo '</article>';
 
 
