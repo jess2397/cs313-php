@@ -7,7 +7,7 @@ $db = dbConnect();
 
 $content = filter_input(INPUT_POST, 'content', FILTER_SANITIZE_SPECIAL_CHARS);
 $author_id = $_SESSION["user_id"];
-$date = date("Y-m-d");
+$date = date("Y-m-d h:i");
 
 try
 {
