@@ -67,8 +67,10 @@ nav a:hover{
 
 main{
     background-color: #BFD7EA;
-    height: 100%;
     padding-top: 5%;
+}
+.login{
+    height: 100%;
 }
 
 
@@ -81,6 +83,7 @@ article{
     box-shadow: 3px 3px #999999;
 }
 .comment{
+    position: relative;
     margin: 15px 15px 15px 30px;
     background-color: #BFD7EA;
     padding: 10px;
@@ -91,14 +94,13 @@ article{
     right: 5px;
     bottom: 5px;
     font-size: .75em;
-
     color: darkgrey;
     padding: 5px;
 }
 
 textarea{
     display: block;
-    width: 90%;
+    width: 60%;
     height: 80px;
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
@@ -106,8 +108,8 @@ textarea{
 }
 input[tye="submit"]{
  position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 0px;
+    bottom: 0px;
 }
 .wrapper{
     width: 200px;
