@@ -43,7 +43,7 @@ $db = dbConnect();
     {
        echo '<form action="post.php" method="post">
             <textarea name="content"></textarea>
-            <input type="submit" value="Post">
+            <input id="create" type="submit" value="Post">
             </form>';
     }
 

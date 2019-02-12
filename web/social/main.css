@@ -107,8 +107,12 @@ textarea{
 
 }
 textarea.work{
-    width: 100%;
+    width: 90%;
     margin: 15px 15px 15px 30px;
+}
+
+#create{
+    margin-left: 30%;
 }
 
 .wrapper{
