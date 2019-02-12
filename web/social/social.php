@@ -37,11 +37,19 @@ $db = dbConnect();
     </nav>
 </header>
 <main>
-    <form action="post.php" method="post">
-    <textarea name="content"></textarea>
-        <input type="submit" value="Comment">
-    </form>
+
+
     <?php
+    if(isset($_SESSION["user_id"]))
+    {
+       echo '<form action="post.php" method="post">
+            <textarea name="content"></textarea>
+            <input type="submit" value="Comment">
+            </form>';
+    }
+
+
+
     foreach ($db->query('SELECT p.id, p.content, p.date, a.display_name FROM post AS p
 JOIN author AS a
 ON p.author_id = a.id') as $row)
@@ -61,12 +69,16 @@ WHERE c.post_id ='. $row['id']) as $comment)
             echo '<div class="comment">
                   <h3>' . $comment['display_name']. '</h3>
                   <p>' . $comment['content'] . '</p>
-                  <div class="date">' . $comment['date']. '</div>';
+                  <div class="date">' . $comment['date']. '</div></div>';
         }
-        echo '<form action="comment.php" method="post">
+        if(isset($_SESSION["user_id"]))
+        {
+            echo '<form action="comment.php" method="post">
     <textarea name="content"></textarea>
     <input type="submit" value="Comment">
     </form>';
+        }
+
 
 echo '</article>';
 
