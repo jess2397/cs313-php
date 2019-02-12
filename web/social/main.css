@@ -3,6 +3,7 @@
 
 /*basics*/
 html{
+    height: 100%;
 }
 
 body{
@@ -73,6 +74,7 @@ main{
 
 /*body articles*/
 article{
+    position: relative;
     margin: 20px 20%;
     background-color: #ffffff;
     padding: 20px;
@@ -85,8 +87,11 @@ article{
     box-shadow: 3px 3px #999999;
 }
 .date{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
     font-size: .75em;
-    float: right;
+
     color: darkgrey;
     padding: 5px;
 }
@@ -98,6 +103,11 @@ textarea{
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
 
+}
+input[tye="submit"]{
+ position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .wrapper{
     width: 200px;
