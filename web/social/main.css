@@ -88,14 +88,14 @@ article{
     color: darkgrey;
 }
 
-.content{
+textarea.content{
     width: 90%;
     height: 120px;
     margin: auto;
     font-family: 'Helvetica', 'Arial', 'sans-serif';
 
 }
-.login form{
+.wrapper{
     margin: auto;
 }
 
