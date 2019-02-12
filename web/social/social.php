@@ -19,7 +19,6 @@ $db = dbConnect();
 </head>
 
 <body>
-<div class="wrap">
 <header>
 <h1>"Social Media"</h1>
 <hr>
@@ -88,7 +87,6 @@ echo '</article>';
     ?>
 
 </main>
-</div>
 </body>
 
 </html>

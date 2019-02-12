@@ -14,7 +14,6 @@ session_start();
 </head>
 
 <body>
-<div class="wrap">
 <header>
 <h1>Login</h1>
 <hr>
@@ -30,7 +29,6 @@ session_start();
     </form>
 
 </main>
-</div>
 </body>
 
 </html>
