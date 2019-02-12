@@ -85,8 +85,17 @@ article{
     padding: 10px;
     box-shadow: 3px 3px #999999;
 }
-.post-date{
-    font-size: .9em;
+.date{
+    font-size: .75em;
+    float: right;
     color: darkgrey;
+}
+
+textarea{
+    width: 90%;
+    height: 120px;
+    margin: auto;
+    font-family: 'Helvetica', 'Arial', 'sans-serif';
+
 }
 
