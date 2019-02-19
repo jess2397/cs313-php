@@ -27,7 +27,7 @@ session_start();
                     <input type="text" name="username"><br/>
                     <?php if ($_GET["fail"])
 {
-    echo "<h2 style='color: red;'>Password must be at least 7 characters and contain a number!</h2>";
+    echo "<h4 style='color: red;'>Password must be at least 7 characters and contain a number!</h2>";
 }
                     ?>
                     Password:<br/>
