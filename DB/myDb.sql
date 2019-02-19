@@ -10,7 +10,7 @@ CREATE TABLE author
 CREATE TABLE post (
     id serial   PRIMARY KEY,
     author_id   int REFERENCES author(id) NOT NULL,
-    content     varchar(1000) NOT NULL,
+    content     TEXT NOT NULL,
     date        timestamp NOT NULL
 );
 
@@ -18,6 +18,6 @@ CREATE TABLE comment (
     id serial   PRIMARY KEY,
     author_id   int REFERENCES author(id) NOT NULL,
     post_id     int REFERENCES post (id)  NOT NULL,
-    content     varchar(1000) NOT NULL,
+    content     TEXT NOT NULL,
     date        timestamp NOT NULL
 );

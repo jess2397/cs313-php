@@ -7,7 +7,9 @@ $db = dbConnect();
 
 $display = filter_input(INPUT_POST, 'display', FILTER_SANITIZE_SPECIAL_CHARS);
 $user = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
-$pass = filter_input(INPUT_POST, 'pass', FILTER_SANITIZE_SPECIAL_CHARS);
+$pass = $_POST["pass"];
+
+$passwordHash = password_hash($pass, PASSWORD_DEFAULT);
 
 try
 {
@@ -16,7 +18,7 @@ try
     // Now we bind the values to the placeholders. This does some nice things
     // including sanitizing the input with regard to sql commands.
     $statement->bindValue(':username', $user);
-    $statement->bindValue(':password', $pass);
+    $statement->bindValue(':password', $passwordHash);
     $statement->bindValue(':display_name', $display);
     $statement->execute();
 
