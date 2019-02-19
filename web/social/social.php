@@ -27,6 +27,7 @@ $db = dbConnect();
         if(isset($_SESSION["user"]))
         {
             echo "Welcome " . $_SESSION["user"];
+            echo '<a href="logout.php">Logout</a>';'
         }
         else
         {
