@@ -9,7 +9,7 @@ $display = filter_input(INPUT_POST, 'display', FILTER_SANITIZE_SPECIAL_CHARS);
 $user = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_SPECIAL_CHARS);
 $pass = $_POST["pass"];
 
-if($pass.length < 7 && $pass.search(/\d/) == -1)
+if($pass.length < 7 && preg_match('\d+', $pass) == 0)
 {
     header('Location: /social/create_user.php?fail=true');
 }
