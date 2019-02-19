@@ -20,7 +20,6 @@ session_start();
         </header>
         <main class="login">
             <div class="wrapper">
-                <h2 style="color:red;<?php if($_GET["fail"] != 'true'){ echo 'display:none';}?>">Username or Password incorrect</h2>
                 <form action="create.php" method="post">
                     Display Name:<br/>
                     <input type="text" name="display"><br/>
